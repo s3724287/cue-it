@@ -1,0 +1,77 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<section class="module-cover parallax" data-overlay="1" data-gradient="1">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h5 style="color:#34454f">Upload your cue sheet</h5>
+              </div>
+              <div class="card-block">
+                  <form method='POST' enctype='multipart/form-data'> 
+                  <div class="form-group">
+                      <select class="form-control">
+                          <option selected="selected">Select</option>
+                          <option>Apra Amcos</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                      </select>
+                  </div>
+                  <div class="input-group is-invalid">
+                      <div class="custom-file">
+                        <input type="file" name="file" class="custom-file-input" id="validatedInputGroupCustomFile">
+                        <label class="custom-file-label" for="validatedInputGroupCustomFile">Choose file...</label>
+                      </div>
+                      <div class="input-group-append">
+                         <input class="submit-cue" type="submit" value="Upload">
+                      </div>
+                    </div>
+                 </form>
+                  
+               
+                </div>
+            </div>
+        </div>
+        
+          <div class="col-lg-5 ">
+              <h2>Upload & Done.</h2>
+              <div class="space" data-MY="50px"></div>
+              <div class="icon-box icon-box-left">
+                  <div class="icon-box-icon"><span class="ti-harddrives"></span></div>
+                  <div class="icon-box-title">
+                      <h6>Upload the data.</h6>
+                  </div>
+                  <div class="icon-box-content">
+                      <p>Select the music body and upload an excel with the track details and duration from your exported EDL. Check out an example here.</p>
+                  </div>
+              </div>
+              <div class="icon-box icon-box-left">
+                  <div class="icon-box-icon"><span class="ti-layout"></span></div>
+                  <div class="icon-box-title">
+                      <h6>We process the data.</h6>
+                  </div>
+                  <div class="icon-box-content">
+                     <p>Let the program work it's magic and isolate the all the necessary track details. If we miss anything, we will let you know.</p>
+                  </div>
+              </div>
+              <div class="icon-box icon-box-left">
+                  <div class="icon-box-icon"><span class="ti-cup"></span></div>
+                  <div class="icon-box-title">
+                      <h6>Download the finished cue.</h6>
+                  </div>
+                  <div class="icon-box-content">
+                      <p>The cue sheet should automatically download for you.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
